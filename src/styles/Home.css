@@ -1,0 +1,22 @@
+.Home {
+    margin-top: 100px;
+    margin-bottom: 150px;
+}
+.root {
+    width: 325px;
+    height: 530px;
+    margin-left: 10px;
+}
+
+.media {
+    margin-top: 10px;
+}
+
+a{
+    text-decoration: underline;
+    color: blue;
+}
+
+ a:hover {
+    cursor: pointer;
+}

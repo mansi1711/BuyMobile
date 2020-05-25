@@ -1,68 +1,35 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+In index.js - main three components are added 
+1) Navbar - fixed
+2) Routes - changes according to flow
+3) Footer - fixed
 
-## Available Scripts
+React redux : Created a store to keep track of cart items, to increase or decrease cart items.
 
-In the project directory, you can run:
+Context Api : Ceated a login provider to maintain login session.
 
-### `npm start`
+Navbar Component : This component is used to set a fixed menu for the website. It is used to send authentication and search events to home and also view the cart and maintain login-logout view change.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Footer Component : This is the footer that is fixed for the website.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+Home Component : It is used to display the data, Pagination, searching, sorting are done in this component. Adding item to cart and view details are triggered from this copmponent.
 
-### `npm test`
+Cart Component : This component is used to display items added in cart. It triggers remove from cart - decrease quantity and details functionality. User can place order from this component - If the user is not loggedin - he will be redirected to the login component. If the user is loggedin - order will be placed and order ID will be displayed. If no items present - he will be requested to add items.
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+CarouselView Component : This component is used to display the details of the component. User can add the item from cart from this component also.
 
-### `npm run build`
+ValidatedLoginForm Component : Login validations and Login is done in this component.
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+history Component : This component is used to provide history to all the components to navigate to a page.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+Routes Components : This component checks the routes and navigate the user accordingly.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+LoginProvider : This is a provider which provides the state to m aintain login session.
 
-### `npm run eject`
+db.json : This file contains the mobile data accessible by json-server to create database and perform operations.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Note : In search functionality - after searching anything you need to refresh the page to see results and if you want to see the original page again then click on cross button - clear search and again refresh.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+Login Credentials:
+email - abc@gmail.com
+Password - Abc12345
